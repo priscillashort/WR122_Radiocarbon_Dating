@@ -29,6 +29,31 @@ time, mark, audio, video {
   background-color: #cccccc;  
   line-height: 2; }
   
+  .dot {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(141, 178, 226);
+    border-radius: 50%;
+    border: 4px;
+    border-color: black;
+    display: inline-block;
+    position:absolute;
+    stroke: black;
+  }
+
+.box {
+    border: 1px solid black;
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.line {
+    width: 5px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
 
 /* Box styles */
 .myBox {
