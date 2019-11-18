@@ -32,13 +32,34 @@ time, mark, audio, video {
   .dot {
     height: 200px;
     width: 200px;
+    /*background-color: rgb(141, 178, 226);*/
+    border-radius: 50%;
+    font-size: 20px;
+    border: 4px;
+    border-color: black; 
+    /*background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    display: inline-block;
+    position: absolute;
+    stroke: black;
+    padding: 20px;
+    background-color: none;
+    /*border:5px solid black;*/
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
     background-color: rgb(141, 178, 226);
     border-radius: 50%;
-    border: 4px;
-    border-color: black;
-    display: inline-block;
-    position:absolute;
-    stroke: black;
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    text-justify: center;
+    text-emphasis-position: 20px;
+    position: absolute;
+    background: #000
   }
 
 .box {
