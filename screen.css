@@ -386,6 +386,16 @@ time, mark, audio, video
     color:rgb(107, 192, 183);
   }
 
+  .bodyText:link {
+    color:black;
+  }
+
+  .bodyText:visited{
+    color: black;
+    text-decoration: none; 
+    -webkit-text-stroke: 1px rgb(71, 184, 209);
+  }
+  
   /* Body styles */
 
 #main {
