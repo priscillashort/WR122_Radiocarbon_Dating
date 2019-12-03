@@ -355,6 +355,11 @@ time, mark, audio, video
     display: block; 
   }
 
+  sub {
+    vertical-align: sub;
+    font-size: smaller;
+  }
+
   a {
     color: rgb(16, 138, 138);
     text-decoration: none; 
