@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-	<link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
-	<!--<link rel="stylesheet" type="text/css" browser="mozillafirefox" href="firefox.css" />
-	<link rel="stylesheet" type="text/css" browser="googlechrome" href="chrome.css" />
-	<link rel="stylesheet" type="text/css" browser="msinternetexpl" href="ie.css" />-->
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+		var browser = 
+		navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ? 'chrome' : 
+		navigator.userAgent.toLowerCase().indexOf('mozilla') > -1 ? 'mozilla' : 'other';
+		
+		if (browser == "mozilla") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"firefox.css\">");
+		}
+		else if (browser == "chrome") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"chrome.css\">");
+		}
+		else {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"screen.css\">");
+		}
+	</script>
+
     <title>Radiocarbon Dating</title>
   </head>
   <body class="index">
@@ -50,49 +63,33 @@
 						<span class="dot" style="height:1300px; width:1300px; top:50px; left:200px; border:5px solid black;"></span>
 
 						<!--Upper inside electron-->
-						<span class="dot" style="top:150px; left:1100px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 50px; padding-top: 20px;">
-								<a href="whatisrcd.html" style="color: black">What is Radiocarbon Dating?</a>
-							</div>
+						<span class="electron" style="top:150px; left:1100px;">
+							<div style="padding-top: 20px;"><a href="whatisrcd.html" style="color: black">What is Radiocarbon Dating?</a></div>
 						</span>
 
 						<!--Right outside electron-->
-						<span class="dot" style="top:550px; left:1425px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 50px; line-height: 50px; padding-top: 20px;">
-								<br>
-								<a href="flaws.html" style="color: black">Flaws</a>
-							</div>
+						<span class="electron" style="top:550px; left:1425px;">
+							<div style="padding-top: 20px;"><br><a href="flaws.html" style="color: black">Flaws</a></div>
 						</span>
 
 						<!--Lower outside electron-->
-						<span class="dot" style="top:1100px; left:1250px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 50px; line-height: 50px; padding-top: 20px;">
-								<br>
-								<a href="uses.html" style="color: black">Uses</a>
-							</div>
+						<span class="electron" style="top:1100px; left:1250px;">
+							<div style="padding-top: 20px;"><br><a href="uses.html" style="color: black">Uses</a></div>
 						</span>
 
 						<!--Left otside electron-->
-						<span class="dot" style="top:1200px; left:450px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 35px; line-height: 50px; padding-top: 30px;">
-								<a href="improve.html" style="color: black">Potential Improvement</a>
-							</div>
+						<span class="electron" style="top:1200px; left:450px;">
+							<div style="font-size: 35px; padding-top: 30px;"><a href="improve.html" style="color: black">Potential Improvement</a></div>
 						</span>
 
 						<!--Lower inside electron-->
-						<span class="dot" style="top:750px; left:200px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 50px; padding-top: 20px;">
-								<br>
-								<a href="thepoint.html" style="color: black">The Point</a>
-							</div>
+						<span class="electron" style="top:750px; left:200px;">
+							<div style="padding-top: 20px;"><br><a href="thepoint.html" style="color: black">The Point</a></div>
 						</span>
 
 						<!--Upper outside electron-->
-						<span class="dot" style="top:200px; left:200px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 50px; padding-top: 20px;">
-								<br>
-								<a href="sources.html" style="color: black">Sources</a>
-							</div>
+						<span class="electron" style="top:200px; left:200px;">
+							<div style="padding-top: 20px;"><br><a href="sources.html" style="color: black">Sources</a></div>
 						</span>
 			</div>
 			<br>
