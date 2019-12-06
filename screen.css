@@ -15,8 +15,8 @@ time, mark, audio, video
   margin: 0;
   padding: 0;
   border: 0;
-  /*font-size: 100%;*/
-  font-size: 20px;
+  font-size: 100%;
+  /*font-size: 20px;*/
   font: inherit;
   vertical-align: baseline; 
 }
@@ -44,6 +44,7 @@ time, mark, audio, video
     /*font-size: 15.2pt;*/
     font-size: 1.1em;
     /*font-size: 121.5%;*/
+    /*font-size: 20px;*/
     border: 4px;
     border-color: black; 
     /*background-repeat: no-repeat;
@@ -421,6 +422,19 @@ time, mark, audio, video
   display: table;
   clear: both; 
 }
+
+@-moz-document url-prefix() { #index_dot, x:-moz-any-link, x:default { font-size: 0.9em; } }
+
+
+/* Firefox only. 1+ */
+/*x:-moz-any-link  { font-size: 1.1em; }*/
+  
+/* Firefox 3.0+ */
+/*x:-moz-any-link, x:default  { font-size: 1.1em; }*/
+  
+/* Firefox 3.5+ */
+/*body:not(:-moz-handler-blocked) { font-size: 1.1em; }*/
+
 
   /* if desktop */
 .mobile_device_380px {
