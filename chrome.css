@@ -41,7 +41,8 @@ time, mark, audio, video
     width: 200px;
     /*background-color: rgb(141, 178, 226);*/
     border-radius: 50%;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 1.1em;
     border: 4px;
     border-color: black; 
     /*background-repeat: no-repeat;
