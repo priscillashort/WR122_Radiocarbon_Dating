@@ -5,6 +5,10 @@
     font-size: 1.1em;
   }
 
+  .dotBigText {
+    font-size: 22px; 
+  }
+
   .electron {
     font-size: 30px; 
   }

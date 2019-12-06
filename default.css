@@ -57,6 +57,20 @@ time, mark, audio, video
     /*border:5px solid black;*/
   }
 
+  .dotBigText {
+    height:900px; 
+    width:900px; 
+    border-radius: 50%;
+    font-size: 25px; 
+    border: 4px;
+    border-color: black; 
+    display: inline-block;
+    position: absolute;
+    stroke: black;
+    padding: 20px;
+    background-color: rgb(141, 178, 226);
+  }
+
   .electron {
     height: 200px;
     width: 200px;
