@@ -2,37 +2,9 @@
 @import "default.css"; 
 
   .dot {
-    height: 200px;
-    width: 200px;
-    /*background-color: rgb(141, 178, 226);*/
-    border-radius: 50%;
-    /*font-size: 15.2pt;*/
     font-size: 1.1em;
-    /*font-size: 121.5%;*/
-    border: 4px;
-    border-color: black; 
-    /*background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    display: inline-block;
-    position: absolute;
-    stroke: black;
-    padding: 20px;
-    background-color: none;
-    /*border:5px solid black;*/
   }
 
   .electron {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 4px;
-    border-color: black; 
-    display: inline-block;
-    position: absolute;
-    stroke: black;
-    padding: 20px;
-    background-color: none;
     font-size: 30px; 
-    line-height: 50px; 
-    background-color: rgb(76, 194, 121);
   }

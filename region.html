@@ -2,7 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">
+		var browser = 
+		navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ? 'chrome' : 
+		navigator.userAgent.toLowerCase().indexOf('mozilla') > -1 ? 'mozilla' : 'other';
+		
+		if (browser == "mozilla") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"firefox.css\">");
+		}
+		else if (browser == "chrome") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"chrome.css\">");
+		}
+		else {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"screen.css\">");
+		}
+	</script>
+
     <title>Radiocarbon Dating</title>
   </head>
   <body class="index">
@@ -135,7 +151,7 @@
 						</span>
 
 						<!--Upper inside electron-->
-						<span class="dot" style="top:450px; left:1300px; background-color: rgb(76, 194, 121);">
+						<span class="electron" style="top:450px; left:1300px;">
 								<img id="myImg" src="regionCarbon.png" alt="Carbon Fluctuations Based on Region" style="padding-top: 70px; width:125px;max-width:100%">
 								<div id="myModal" class="modal">
 								  <span class="close">&times;</span>
@@ -168,19 +184,19 @@
 						</span>
 
 						<!--Right outside electron-->
-						<span class="dot" style="top:150px; left:1250px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:150px; left:1250px;"></span>
 
 						<!--Lower outside electron-->
-						<span class="dot" style="top:800px; left:1400px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:800px; left:1400px;"></span>
 
 						<!--Left otside electron-->
-						<span class="dot" style="top:1250px; left:650px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:1250px; left:650px;"></span>
 
 						<!--Lower inside electron-->
-						<span class="dot" style="top:300px; left:300px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:300px; left:300px;"></span>
 
 						<!--Upper outside electron-->
-						<span class="dot" style="top:500px; left:100px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:500px; left:100px;"></span>
 			</div>
 			<br>
 			<br>

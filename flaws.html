@@ -2,7 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">
+		var browser = 
+		navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ? 'chrome' : 
+		navigator.userAgent.toLowerCase().indexOf('mozilla') > -1 ? 'mozilla' : 'other';
+		
+		if (browser == "mozilla") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"firefox.css\">");
+		}
+		else if (browser == "chrome") {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"chrome.css\">");
+		}
+		else {
+			document.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"screen.css\">");
+		}
+	</script>
+
     <title>Radiocarbon Dating</title>
   </head>
   <body class="index">
@@ -85,36 +101,28 @@
 						<span class="dot" style="height:1300px; width:1300px; top:50px; left:200px; border:5px solid black;"></span>
 
 						<!--Upper inside electron-->
-						<span class="dot" style="top:200px; left:1150px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 50px; padding-top: 0px;">
-								<br>
-								<a href="halflife.html" style="color: black">Half-Life Fluctuation</a>
-							</div>
+						<span class="electron" style="top:200px; left:1150px;">
+							<div style="padding-top: 0px;"><br><a href="halflife.html" style="color: black">Half-Life Fluctuation</a></div>
 						</span>
 
 						<!--Right outside electron-->
-						<span class="dot" style="top:460px; left:1400px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:460px; left:1400px;"></span>
 
 						<!--Lower outside electron-->
-						<span class="dot" style="top:1000px; left:1300px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 40px; padding-top: 20px;">
-								<a href="region.html" style="color: black">Carbon Fluctuations Based on Region</a>
-							</div>
+						<span class="electron" style="top:1000px; left:1300px;">
+							<div style="line-height: 40px; padding-top: 20px;"><a href="region.html" style="color: black">Carbon Fluctuations Based on Region</a></div>
 						</span>
 
 						<!--Left otside electron-->
-						<span class="dot" style="top:1250px; left:550px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:1250px; left:550px;"></span>
 
 						<!--Lower inside electron-->
-						<span class="dot" style="top:650px; left:200px; background-color: rgb(76, 194, 121);">
-							<div style="font-size: 40px; line-height: 40px; padding-top: 0px;">
-								<br>
-								<a href="time.html" style="color: black">Carbon Fluctuations Over Time</a>
-							</div>
+						<span class="electron" style="top:650px; left:200px;">
+							<div style="line-height: 40px; padding-top: 0px;"><br><a href="time.html" style="color: black">Carbon Fluctuations Over Time</a></div>
 						</span>
 
 						<!--Upper outside electron-->
-						<span class="dot" style="top:275px; left:150px; background-color: rgb(76, 194, 121);"></span>
+						<span class="electron" style="top:275px; left:150px;"></span>
 			</div>
 			<br>
 			<br>
